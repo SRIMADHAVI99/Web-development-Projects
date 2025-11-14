@@ -88,6 +88,7 @@ Responsive flex layout
 │   • Signup input & button                │
 └──────────────────────────────────────────┘
 
+
 🧩 Tools & Technologies
 Technology	Purpose
 HTML5	Page structure
