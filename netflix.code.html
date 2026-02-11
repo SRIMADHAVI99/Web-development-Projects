@@ -1,118 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-   <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon"href="./public/images/netflix logo.png">
-        <title>Netflix India-Watch Shows Online,Watch Movies Online</title>
-
-        <meta name = "description"
-         content="Watch Netflix Movies & TV Shows Online or Stream Right to your Smart TV, Game Console, PC, Mac, Mobile, Tablet and more.">
-
-        <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
-        <style type="text/css">
-    body{
-      background:url("./public/images/netflix.jpg") no-repeat center center fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 0%;
-      background-attachment: fixed;
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"href="./public/images/netflix logo.png">
+    <title>Netflix India-Watch Shows Online,Watch Movies Online</title><meta name = "description"
+    content="Watch Netflix Movies & TV Shows Online or Stream Right to your Smart TV, Game Console, PC, Mac, Mobile, Tablet and more.">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+      body{
+        background:url("./public/images/netflix.jpg") no-repeat center center fixed;background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .shade{
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
       }
 
-    .shade{
-      background-color: rgba(0, 0, 0, 0.75);
-      height: 100vh;
-      width: 100vw;
-      position: fixed;
-    
-     
+      header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 60px;
+        position: relative;
       }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 25px 60px;
-      position: relative;
-     
+      .headerTittle{
+        color: red;
+        font-size: 32px;
+        font-weight: bold ;
       }
-   .headerTittle{
-      color: red;
-      font-size: 32px;
-      font-weight: bold ;
-      letter-spacing: 1px;
+      .language{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 4px;
+        padding: 6px 12px;
+        font-size: 15px; 
+        margin-right: 20px;
+        align-items: center;
       }
-
-    .language{
-      color: white;
-      background-color: rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      border-radius: 4px;
-      padding: 6px 12px;
-      font-size: 15px;
-      
-      margin-right: 20px;
-      display: flex;
-      align-items: center;
-  
+      .headerSignIn{    
+        background-color: red;
+        color: white;
+        border:none;
+        border-radius: 6px;
+        padding: 8px;
+        font-size :16px;
+        font-weight: bold ;
       }
-  
-    .headerSignIn{    
-      background-color: red;
-      color: white;
-      border:none;
-      border-radius: 5px;
-      padding: 8px 18px;
-      font-size :16px;
-      font-weight: bold ;
-      padding-right: 5px;
+      .bold{
+        color: #fff;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1.1;
+        margin: 5px 0;
       }
-   
-    .bold{
-      color: #fff;
-      font-size: 60px;
-      font-weight: 900;
-      line-height: 1.1;
-      margin: 5px 0;
+      .bold1{
+        color: #fff;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1.1;
+        margin: 5px 0;
       }
-    .bold1{
-      color: #fff;
-      font-size: 60px;
-      font-weight: 900;
-      line-height: 1.1;
-      margin: 5px 0;
+      .bolds{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 8px;      
       }
-
-    .bolds{
-      font-size: 20px;
-      text-align: center;
-      color: white;
-      margin-top: 8px;      
+      .boldss{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin: 15px 0 5px 0; 
       }
-
-    .boldss{
-      font-size: 20px;
-      text-align: center;
-      color: white;
-      margin: 15px 0 5px 0; 
+      .bolding{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.5);  
+        border-radius: 4px;
+        padding: 12px;
+        font-size: 16px;
+        width: 300px;
       }
-
-    .bolding{
-      color: white;
-      background-color: rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.5);  
-      border-radius: 4px;
-      padding: 12px;
-      font-size: 16px;
-      width: 300px;
-       }
-
-     .article{
+      .article{
         color: white;
         background-color: red;
         border: none;  
@@ -121,76 +99,66 @@
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
-     }
-
-    main{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      position: relative;
-   
-    }
-    
-     .bi-bi-caret-down-fill{
-      color: white;
-      image-resolution: 10px;
-    }
-
-     .email-container {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 10px;
-       margin-top: 20px;
-       flex-wrap: wrap;
       }
-
-     nav {
-     display: flex;
-     align-items: center;
-     gap: 10px;
-    }
-
-     .bold, .bold1, .bolds, .boldss {
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    }
-
-     .netflix-logo {
-      height: 40px; /
+      main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        position: relative;
       }
-
-        </style>
-        <script></script>
-   </head>
-
-   <body  >
-    <div class="shade"></div>
-     <header>
-         <div>
-   <img src="./public/images/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
-         </div>
-          <nav>
-     <span class="language">
-  <span class="bi bi-translate"></span> English 
-  <span class="bi bi-caret-down-fill"></span>
-</span>
-       <button class="headerSignIn">Sign In</button>
-      </nav>
-        </header>
-           <main>
-        <div class="bold">Unlimited movies,</div><br>        
-         <div class="bold1">shows, and more</div><br>
-          <div class="bolds">Starts at ₹149. Cancel at any time.</div><br>
-            <div class="boldss">Ready to watch? Enter your email to create or restart your membership.</div><br>
-   <div class="email-container">
-  <input class="bolding" type="email" placeholder="Email address">
-  <button class="article">
-    Get Started <span class="bi bi-chevron-right"></span>
-  </button>
-</div>
-           </main>
-   </body>
+      .bi-bi-caret-down-fill{
+        color: white;
+        image-resolution: 10px;
+      }
+      .email-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px; 
+        flex-wrap: wrap;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .bold, .bold1, .bolds, .boldss {
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      }
+      .netflix-logo {
+        height: 40px; 
+      }
+    </style>
+ </head>
+ <body  >
+  <div class="shade"></div>
+  <header>
+    <div>
+      <img src="./public/images/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
+    </div>
+    <nav>
+      <span class="language">
+        <span class="bi bi-translate"></span> English 
+        <span class="bi bi-caret-down-fill"></span>
+      </span>
+      <button class="headerSignIn">Sign In</button>
+    </nav>
+  </header>
+  <main>
+    <div class="bold">Unlimited movies,</div><br>        
+    <div class="bold1">shows, and more</div><br>
+    <div class="bolds">Starts at ₹149. Cancel at any time.</div><br>
+    <div class="boldss">Ready to watch? Enter your email to create or restart your membership.</div><br>
+    <div class="email-container">
+      <input class="bolding" type="email" placeholder="Email address">
+      <button class="article">
+        Get Started <span class="bi bi-chevron-right"></span>
+      </button>
+    </div>
+  </main>
+</body>
 </html>
